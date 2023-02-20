@@ -4,8 +4,18 @@ ion-card-header.ios {
     flex-flow: column-reverse;
 }
 
-.notification{
-    margin-left: auto;
 
+
+.header{
+display: flex;
+    flex-wrap: nowrap;
 }
 
+.header > div{
+ 
+    //   width: 150%;
+         margin-left: 200px;
+        // text-align: center;
+        // // line-height: 75px;
+        // // font-size: 30px;
+}

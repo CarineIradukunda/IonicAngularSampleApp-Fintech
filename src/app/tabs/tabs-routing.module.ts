@@ -27,7 +27,7 @@ const routes: Routes = [
     ]
   },
   {
-    path: '',
+    path: 'tabs',
     redirectTo: '/tabs/tab1',
     pathMatch: 'full'
   }
