@@ -1,17 +1,89 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Overview
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-card  style="background-color: #252525;">
+            <ion-card-content>
+                      <ion-avatar>
+                        <img alt="Silhouette of a person's head"
+                          src="https://t4.ftcdn.net/jpg/02/79/66/93/360_F_279669366_Lk12QalYQKMczLEa4ySjhaLtx1M2u7e6.jpg" />
+                      </ion-avatar>
+                      <ion-card-content style=" text-align: center;"><ion-text color="medium" style="font-family:'Courier New', monospace;font-size:15px">Total Balance</ion-text><br>
+                      <ion-text style="color: white;font-family:'Courier New', monospace;font-size:18px">Rwf 5000,20</ion-text></ion-card-content>
+            </ion-card-content>
+
+        <!-- <ion-icon class="notification" name="notifications"></ion-icon> -->
+      </ion-card>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+
+  <ion-card style="background-color: #e6e6e7;">
+<ion-card>
+  <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
+
+</ion-card>
+    
+<ion-card-content style="display:inline-block;margin-left: 10%;">
+  <ion-button color="light">
+  <ion-icon name="fast-food-outline"></ion-icon>
+</ion-button>
+<ion-button color="light">
+<ion-icon name="airplane-outline"></ion-icon>
+</ion-button>
+<ion-button color="light">
+<ion-icon name="book-outline"></ion-icon>
+</ion-button></ion-card-content>
+
+
+  <ion-card style="background-color: #fcfcfd;">
+    <!-- <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header> -->
+  
+    <div style="display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 3fr ;
+ column-gap: 0px;background-color: #fcfcfd;">
+ <img style = " max-width: 50%;
+"src="../assets/images/uber.png"/>
+  <ion-text style=" font-size: 20px;color: black;">Uber<br><ion-text style="color:  rgb(175, 174, 174);font-size: 12px">22.02.2023</ion-text></ion-text>
+  </div>
+  
+  <hr style="background-color: rgb(175, 174, 174);">
+
+    <div style="display: grid;
+     align-items: center; 
+     grid-template-columns: 1fr 1fr 3fr ;
+     column-gap: 0px;background-color: #fcfcfd;">
+      <img style=" max-width: 50%;
+    " src="../assets/images/apple.svg" />
+      <ion-text style=" font-size: 20px;color: black;">Apple<br><ion-text
+          style="color:  rgb(175, 174, 174);font-size: 12px">22.02.2023</ion-text></ion-text>
+    </div>
+      
+      <hr style="background-color: rgb(175, 174, 174);">
+    <div style="display: grid;
+     align-items: center; 
+     grid-template-columns: 1fr 1fr 3fr ;
+     column-gap: 0px;background-color: #fcfcfd;">
+      <img style=" max-width: 50%;
+    " src="../assets/images/uber.png" />
+      <ion-text style=" font-size: 20px;color: black;">Uber<br><ion-text
+          style="color:  rgb(175, 174, 174);font-size: 12px">22.02.2023</ion-text></ion-text>
+    </div>
+
+  </ion-card>
+    
+  </ion-card>
+
+
 </ion-content>
