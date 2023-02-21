@@ -1,17 +1,47 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>login</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
+<ion-card-content>
 
-<ion-content>
-  <ion-button color="light" routerLink="/tabs">
-    <ion-icon name="caret-forward">START</ion-icon>
-  </ion-button>
-</ion-content>
+  <ion-toolbar>
+    <ion-card>
+      <img alt="Silhouette of mountains" style="width: 100%;height: 40%;" src="../assets/images/gt.jpg" />
+      <ion-card-header>
+        <ion-card-title style="font-size: large;text-align: center;">WELCOME TO GTBank Rwanda <br>
+          <p></p>Toolbox
+        </ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  </ion-toolbar>
 
-<ion-content>
-  <ion-button color="light" routerLink="/home">
-    <ion-icon name="caret-forward">START</ion-icon>
-  </ion-button>
-</ion-content>
+  <br>
+  <br>
+  <ion-content>
+    <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+      <ion-item>
+        <ion-label position="floating" style="color: gray;font-size: 9pt;">Username</ion-label>
+        <ion-input type="text" required placeholder="Username" formControlName="username"></ion-input>
+      </ion-item>
+      
+      <br>
+
+      <ion-item>
+        <ion-label position="floating" style="color: gray;font-size: 9pt;">Password</ion-label>
+        <ion-input type="password" required formControlName="password"></ion-input>
+      </ion-item>
+
+
+      <br>
+      <br>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="light" style="
+	   margin-left: 40%;font-size: medium;font-weight: bold;" (click)="onFormSubmit()">SIGN IN</ion-button>
+
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-content>
+</ion-card-content>
